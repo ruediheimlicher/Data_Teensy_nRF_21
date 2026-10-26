@@ -62,7 +62,6 @@ volatile uint8_t do_output=0;
 
 //static volatile uint8_t buffer[USB_DATENBREITE]={};
 
-
 static volatile uint8_t recvbuffer[USB_DATENBREITE]={};
 
 static volatile uint8_t sendbuffer[USB_DATENBREITE]={};
@@ -70,13 +69,11 @@ static volatile uint8_t sendbuffer[USB_DATENBREITE]={};
 // fuer daten von teensy
 static volatile uint8_t teensybuffer[USB_DATENBREITE]={};
 
-
 #define TIMER0_STARTWERT	0x40
 
 #define EEPROM_STARTADRESSE   0x7FF
 
 volatile uint8_t timer0startwert=TIMER0_STARTWERT;
-
 
 void delay_ms(unsigned int ms);
 
